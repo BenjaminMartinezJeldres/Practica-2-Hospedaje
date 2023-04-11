@@ -1,0 +1,52 @@
+{
+    "service": {
+        "name": {
+            "type": "String",
+            "required": true
+        },
+        "price": {
+            "type": "Number",
+            "required": true
+        },
+        "description": "String",
+        "category": {
+            "type": "Schema.ObjectID",
+            "ref": "Category"
+        }
+    },
+    "category": {
+        "name": {
+            "type": "String",
+            "required": true
+        }
+    },
+
+    "vecino": {
+        "name": {
+            "type": "String",
+            "required": true
+        },
+        "email": {
+            "type": "String",
+            "required": true
+        },
+        "password": {
+            "type": "String",
+            "required": true
+        },
+        "role": {
+            "type": "String",
+            "enum": [
+                "admin",
+                "user"
+            ],
+            "default": "user"
+        }
+    },
+    "pet":{
+        "name":"string"
+
+    }
+
+
+}
